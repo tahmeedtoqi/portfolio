@@ -209,33 +209,62 @@ html, body {
 }
 
 /* Responsive design for smaller screens */
+/* Responsive design for smaller screens */
 @media (max-width: 600px) {
     .background {
-        height: 100vh;
+        height: auto; /* Adjusted to allow flexible height */
         padding-left: 20px;
+        padding-right: 20px; /* Add some padding on the right */
     }
 
     .content {
         grid-template-columns: 1fr; /* Make it a single column on smaller screens */
-        gap: 10px;
+        gap: 10px; /* Reduced gap between items */
     }
 
     .heading, .description {
-        margin-left: 20px;
+        margin-left: 20px; /* Adjusted margin for better alignment */
+        margin-right: 20px; /* Added margin for right alignment */
     }
 
     .image-container {
         margin-top: 20px;
         margin-right: 0;
+        width: 100%; /* Allow the image container to take full width */
+        height: auto; /* Allow height to adjust based on image */
     }
 
     /* Stack the cards vertically on smaller screens */
     .card-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center the cards */
     }
 
     .card, .card1 {
-        width: 80%; /* Cards take up more width on smaller screens */
+        width: 90%; /* Cards take up more width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked cards */
+    }
+
+    .social a {
+        margin: 0 10px; /* Reduced margin for social links */
+        font-size: 1rem; /* Adjust font size for better visibility */
+    }
+
+    .footer {
+        padding: 20px 10px; /* Reduced padding for footer */
+        margin-top: 20px; /* Adjusted margin for footer */
+    }
+
+    .button {
+        width: 100%; /* Make button full-width */
+        padding: 15px; /* Increased padding for easier tapping */
+    }
+
+    .motivation {
+        width: 90%; /* Allow motivation section to take more width */
+    }
+
+    .achievement-list {
+        padding: 10px; /* Reduced padding for achievement list */
     }
 }
