@@ -1,0 +1,241 @@
+/* General background style */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #2E0056, #6A00FF);
+}
+.footer {
+    width: 100%; /* Full width of the screen */
+    background: black; /* Footer background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 30px 0; /* Add space inside the footer */
+    clear: both; /* Ensure it stays below the floated content */
+    margin-top: 40px; /* Space between footer and content above */
+}
+
+.header{
+    margin: 0;
+    font-size: 1.8rem;
+}
+.social {
+    margin-top: 15px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.social a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 25px; /* Space between links */
+    padding: 5px 10px; /* Add padding to the links for extra clickable area */
+    display: inline-block; /* Allows padding and background changes to work */
+}
+
+.social a:hover {
+    text-decoration: none;
+    background-color: yellow; /* Highlight color */
+    color: black;
+    border-radius: 30px; /* Underline on hover */
+    padding: 10px 30px; /* Increase the padding for a wider background on hover */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+
+.texo {
+    font-family: Arial;
+    color: black;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.achievement-list {
+    height: auto;
+    width: auto;
+    background-color: beige;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40%, 40%;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+.achiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tilt{
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 12px; /* Add rounded corners */
+
+}
+.tilt:hover {
+    background-color: yellow; /* Highlight color */
+    color: black;
+    border-radius: 30px; /* Underline on hover */
+    padding: 10px 30px; /* Increase the padding for a wider background on hover */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Text color when highlighted */
+}
+.motivation{
+    margin-top: 20px; /* Adjust this as needed */
+    padding: 20px;
+    margin: 20px auto;
+    height: auto;
+    width: 80%; /* Make it span across both card widths */
+    background-color: beige;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for styling */
+}
+
+.color{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: black;
+}
+.des {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
+.heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex; /* Use Flexbox to align cards side by side */
+    justify-content: space-around; /* Distribute space between the cards */
+    align-items: center;
+    margin: 20px auto; /* Center the cards */
+    margin-top: 100px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Card styling */
+.card, .card1 {
+    height: 400px;
+    width: 40%;
+    background-color: beige;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40%, 40%;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for styling */
+}
+
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%; /* 60% for text, 40% for the image */
+    gap: 70px; /* Space between the columns */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Text container */
+.text {
+    font-family: Arial;
+    color: lightcyan;
+    margin-left: 10px;
+}
+.tex {
+    font-family: Arial;
+    color: black;
+    margin-left: 10px;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: lightcyan;
+}
+
+.button {
+    border-radius: 20px;
+    margin-top: 40px;
+    font-family: Arial;
+    font-size: 1.2rem;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.button:hover { /* Highlight color */
+    color: black;
+    border-radius: 20px; /* Underline on hover */
+    padding: 10px 30px; /* Increase the padding for a wider background on hover */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Text color when highlighted */
+}
+
+/* Image container */
+.image-container {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid lightblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container p {
+    margin-top: 10px;
+    color: lightcyan;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .background {
+        height: 100vh;
+        padding-left: 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr; /* Make it a single column on smaller screens */
+        gap: 10px;
+    }
+
+    .heading, .description {
+        margin-left: 20px;
+    }
+
+    .image-container {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    /* Stack the cards vertically on smaller screens */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .card1 {
+        width: 80%; /* Cards take up more width on smaller screens */
+    }
+}
